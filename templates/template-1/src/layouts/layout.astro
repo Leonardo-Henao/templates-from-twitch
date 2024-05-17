@@ -1,0 +1,22 @@
+---
+import SectionLandingBrands from '../components/SectionLandingBrands';
+import Navbar from '../components/navbar.astro';
+import SectionMain from '../components/section-main.astro';
+import SectionPopularCourses from '../components/section-popular-courses.astro';
+import SectionSecondMain from '../components/section-second-main.astro';
+import SectionToCertifiedTeacher from '../components/section-to-certified-teacher.astro';
+import { LandingBrandsData } from '../data/LandingBrandsData';
+
+import SectionTestimonials from '../components/section-testimonials.astro';
+import './global.css';
+---
+
+<layout>
+  <Navbar />
+  <SectionMain />
+  <SectionLandingBrands brands={LandingBrandsData} />
+  <SectionSecondMain />
+  <SectionPopularCourses />
+  <SectionToCertifiedTeacher />
+  <SectionTestimonials />
+</layout>

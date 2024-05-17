@@ -1,0 +1,68 @@
+---
+import { HiMiniUserCircle } from 'react-icons/hi2';
+import { CiUser } from 'react-icons/ci';
+import { GoDotFill } from 'react-icons/go';
+import { IoMdStar } from 'react-icons/io';
+import { IoBookOutline } from 'react-icons/io5';
+import { CoursesData } from '../data/CoursesData';
+---
+
+<article class="bg-degrad-global">
+  <div class="width-global text-center py-12">
+    <h2 class="text-3xl font-extrabold">Our Popular Courses</h2>
+    <p class="w-3/6 mx-auto mt-4">
+      Discover our most sought-after courses, carefully curated to meet the demands of today’s learners. Dive
+      into engaging content crafted for success in every step of your educational journey.
+    </p>
+    <div class="flex gap-8 mt-8 justify-center">
+      {
+        CoursesData.map((x) => (
+          <div class="bg-white p-3 rounded-2xl">
+            <div class="rounded-xl overflow-hidden">
+              <img class="scale-105 w-full h-52" src={x.pathImage} alt={x.courseName} />
+            </div>
+            <div class="text-fontcolor">
+              <div class="text-sm my-4 flex justify-between *:rounded-sm *:px-2">
+                <div class="bg-secondary/50 flex items-center">
+                  <div class="text-secondary">
+                    <GoDotFill />
+                  </div>
+                  {x.courseArea}
+                </div>
+                <div class="bg-primary text-white flex items-center px-2 gap-2">
+                  <IoMdStar />
+                  {x.courseStars}
+                </div>
+              </div>
+              <h3 class="text-xl font-extrabold w-4/6 text-start">{x.courseName}</h3>
+              <div class="flex *:flex *:items-center items-center gap-4 my-4 text-sm">
+                <div>
+                  <span class="text-secondary">
+                    <IoBookOutline />
+                  </span>
+                  <span class="ml-2">{x.courseNumberClass} Clases</span>
+                </div>
+                <div>
+                  <span class="text-secondary">
+                    <CiUser />
+                  </span>
+                  <span class="ml-2">{x.currentStudents} Students</span>
+                </div>
+              </div>
+              <hr />
+              <div class="flex justify-between my-3">
+                <span class="text-lg font-extrabold">{x.coursePrice}</span>
+                <div class="flex items-center gap-1">
+                  <div class="text-3xl icon-indicator-status relative">
+                    <HiMiniUserCircle />
+                  </div>
+                  <span class="text-primary">{x.teacherName}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</article>

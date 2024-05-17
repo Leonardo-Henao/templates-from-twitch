@@ -1,0 +1,18 @@
+---
+import { IoIosArrowDown } from 'react-icons/io';
+import ButtonAction from './ButtonAction';
+---
+
+<navbar class="flex justify-between px-4 py-8 width-global">
+  <div class="brand font-extrabold text-2xl">Etech.</div>
+  <ul class="*:flex *:justify-center *:items-center *:gap-2 flex flex-row gap-6">
+    <li>Courses <IoIosArrowDown /></li>
+    <li>Teachers <IoIosArrowDown /></li>
+    <li>Offers <IoIosArrowDown /></li>
+    <li>Contact <IoIosArrowDown /></li>
+  </ul>
+  <div class="flex gap-4 *:px-5 *:py-1 *:rounded-md">
+    <button class="border-primary border-2">Sign in</button>
+    <ButtonAction text="Free Trial" />
+  </div>
+</navbar>

@@ -1,0 +1,64 @@
+---
+import { TestimonialData } from '../data/TestimonialData';
+import { FaStar } from 'react-icons/fa';
+import { IoIosArrowBack } from 'react-icons/io';
+import { IoIosArrowForward } from 'react-icons/io';
+import SectionContactMe from './section-contac-me.astro';
+import Footer from './footer.astro';
+
+const startRepeat = (n: number) => {
+  let response: number[] = [];
+  for (let i = 0; i < n; i++) {
+    response.push(i);
+  }
+  return response;
+};
+---
+
+<div class="bg-degrad-global-big">
+  <div class="width-global pb-12">
+    <div class="text-center w-3/6 mx-auto py-20">
+      <h2 class="text-3xl font-extrabold">Student’s Testimonials</h2>
+      <h5>
+        Here's what our students have to say about their transformative learning ‘experience: Real stories,
+        real growth. Discover firsthand the impact our courses have had on their lives.
+      </h5>
+    </div>
+    <div class="grid grid-cols-3 gap-8">
+      {
+        TestimonialData.map((x) => (
+          <div class="p-4 rounded-md bg-white text-primary">
+            <div class="flex items-center gap-6">
+              <div class="size-16 bg-white flex justify-center items-center overflow-hidden rounded-[50%] border-4 border-primary">
+                <img class="scale-150" src={x.pathImage} alt={`Photo's ${x.name}`} />
+              </div>
+              <div>
+                <h4 class="font-bold">{x.name}</h4>
+                <h5 class="text-xs text-black opacity-70">{x.rolCompany}</h5>
+                <div class="flex">
+                  {startRepeat(x.stars).map((x) => (
+                    <div class="text-yellow-400 text-xs">
+                      <FaStar />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <p class="text-black opacity-70 py-2">{x.text}</p>
+          </div>
+        ))
+      }
+    </div>
+    <div class="font-extrabold flex items-center gap-4 mx-auto w-fit my-12">
+      <span class="text-2xl">
+        <IoIosArrowBack />
+      </span>
+      <span class="">01/15</span>
+      <span class="text-2xl">
+        <IoIosArrowForward />
+      </span>
+    </div>
+  </div>
+  <SectionContactMe />
+  <Footer />
+</div>

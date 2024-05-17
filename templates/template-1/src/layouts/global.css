@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind components;
+
+@layer components {
+	.icon_benefits {
+		@apply text-3xl p-3 rounded-[50%]
+	}
+}
+
+:root {
+	--cl-primary: #B772FF;
+	--cl-secondary: #E683C6;
+	--cl-tertiary: #F78AB3;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	color: #25193C;
+}
+
+.poppins {
+	font-family: "Poppins", sans-serif;
+}
+
+.width-global {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.bg-degrad-global {
+	background: linear-gradient(to right bottom, var(--cl-primary), var(--cl-secondary));
+	color: white;
+}
+
+.bg-degrad-global-big {
+	background: linear-gradient(to right bottom, var(--cl-primary), var(--cl-secondary), var(--cl-primary));
+	color: white;
+}
+
+.icon-indicator-status::after {
+	content: '';
+
+	position: absolute;
+	height: 0.5rem;
+	width: 0.5rem;
+	background-color: #00ce00;
+	border-radius: 50%;
+
+	bottom: .2rem;
+	right: 0;
+}

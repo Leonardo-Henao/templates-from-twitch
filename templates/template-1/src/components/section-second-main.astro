@@ -1,0 +1,104 @@
+---
+import { FaMagnifyingGlass } from "react-icons/fa6";
+import { RiGraduationCapLine } from "react-icons/ri";
+import { IoBookOutline } from "react-icons/io5";
+import { FaUser } from "react-icons/fa6";
+import { FaPlay } from "react-icons/fa";
+---
+
+<article>
+	<h4 class="text-2xl w-full text-center py-8 font-extrabold mt-12">
+		Search Courses
+	</h4>
+	<form
+		action="javascript:search()"
+		class="w-full flex justify-center items-center gap-4 mb-12"
+	>
+		<span class="text-primary text-2xl">
+			<FaMagnifyingGlass />
+		</span>
+		<div>
+			<input
+				class="[font-size:1.2rem]"
+				type="text"
+				name="search"
+				id="search"
+				placeholder="Search for over 50+ courses"
+			/>
+		</div>
+		<input
+			class="bg-degrad-global py-2 px-6 font-bold rounded-md text-lg"
+			type="submit"
+			value="Search"
+		/>
+	</form>
+
+	<div class="width-global py-12 flex gap-12 justify-center items-center">
+		<img
+			src="/images/main-2.png"
+			alt="Promotion image benefits"
+			class="w-4/6"
+		/>
+		<div>
+			<h2 class="text-3xl font-extrabold w-4/6">
+				<span class="text-primary"> Benefits </span>
+				From Our Online Learning
+			</h2>
+			<div class="p-4 *:mb-8">
+				<div class="flex gap-4 items-center">
+					<span class="text-white bg-primary icon_benefits">
+						<RiGraduationCapLine />
+					</span>
+					<p class="*:block">
+						<span class="font-extrabold text-2xl"> Online Degrees </span>
+						<span class="opacity-70">
+							Eam occredited dogrees from the comort of your homo, opening doors
+							to workd of possibilties.
+						</span>
+					</p>
+				</div>
+				<div class="flex gap-4 items-center">
+					<span class="text-white bg-secondary icon_benefits">
+						<IoBookOutline />
+					</span>
+					<p class="*:block">
+						<span class="font-extrabold text-2xl"> Short Courses </span>
+
+						<span class="opacity-70">
+							Eam occredited dogrees from the comort of your homo, opening doors
+							to workd of possibilties.
+						</span>
+					</p>
+				</div>
+				<div class="flex gap-4 items-center">
+					<span class="text-white bg-primary icon_benefits"> <FaUser /></span>
+					<p class="*:block">
+						<span class="font-extrabold text-2xl"> Training From Experts </span>
+						<span class="opacity-70">
+							Immerso yoursoll in knowlodge with industry experts quiding you
+							through hands-on exparience.
+						</span>
+					</p>
+				</div>
+				<div class="flex gap-4 items-center">
+					<span class="text-white bg-secondary icon_benefits">
+						<FaPlay />
+					</span>
+					<p class="*:block">
+						<span class="font-extrabold text-2xl"> 1.5k+ Video Courses </span>
+						<span class="opacity-70">
+							Dive into @ vast ibrory of over 15k video courses covering many
+							subjects, offering a visual loarning oxperionce.
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+
+<script is:inline>
+	const search = (event) => {
+		event.preventDefault();
+	};
+</script>
