@@ -1,4 +1,5 @@
 <!-- Badgets  https://github.com/Ileriayo/markdown-badges -->
+
 # Lhenaoll - Twitch Templates
 
 This is a collection of websites templates created by Lhenaoll on Twitch live.
@@ -19,11 +20,12 @@ This is a collection of websites templates created by Lhenaoll on Twitch live.
 ](https://ko-fi.com/lhenaoll)
 [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)
 ](https://paypal.me/leohenao)
+
 </div>
 
 ## Indice
 
-### \# 1
+### \# <a href="./templates/template-1/">1</a>
 
 <div align="center">
 
@@ -31,15 +33,41 @@ This is a collection of websites templates created by Lhenaoll on Twitch live.
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-</div>
 
 ![Image](./screenshots/1.png)
 
-<div align="center">
-
-[Video aqui <br>
+[Here video! <br>
 ![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtube.com/@lhenaoll)
 
-*Creditos* [**Behance**](https://www.behance.net/gallery/184359459/E-Learning-Responsive-Website-Landing-Page-Design)
+_Creditos_ [**Behance**](https://www.behance.net/gallery/184359459/E-Learning-Responsive-Website-Landing-Page-Design)
+
+</div>
+
+### \# <a href="./templates/template-2/">2</a>
+
+<div align="center">
+
+![Astro](https://img.shields.io/badge/astro-%232C2052.svg?style=for-the-badge&logo=astro&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+
+![Image](./screenshots/2.png)
+
+[Here video! <br>
+![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtube.com/@lhenaoll)
+
+_Creditos_ [**Dribble**](https://dribbble.com/shots/20540826-Rhinos-Gym-Gym-and-Fitness-Animation)
+
+</div>
+
+<div align="center">
+<br>
+<br>
+
+[![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)
+](https://ko-fi.com/lhenaoll)
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)
+](https://paypal.me/leohenao)
 
 </div>

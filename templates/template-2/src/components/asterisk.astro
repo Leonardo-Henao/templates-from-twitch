@@ -1,0 +1,13 @@
+---
+import { CgAsterisk } from "react-icons/cg";
+
+interface Props {
+	props: string;
+}
+
+const { props } = Astro.props;
+---
+
+<div class=`text-accent ${props} absolute`>
+	<CgAsterisk />
+</div>

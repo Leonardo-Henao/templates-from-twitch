@@ -1,0 +1,57 @@
+---
+import { type ITrainer } from "../interfaces/ITrainer";
+interface Props {
+	trainer: ITrainer;
+}
+
+const { trainer } = Astro.props;
+---
+
+<div class="card-trainer rounded-[4rem]">
+	<div class="w-full h-full">
+		<img
+			class="rounded-[3rem] w-full h-full object-cover"
+			src={trainer.photo}
+			alt={`Foto de ${trainer.trainerName}`}
+		/>
+		<div
+			class="absolute bottom-0 left-0 p-8 bg-black/10 w-full rounded-b-[3rem]"
+		>
+			<h2 class="san-jose text-5xl">
+				{trainer.trainerName}
+			</h2>
+			<h3 class="font-bold text-2xl">
+				{trainer.rolTrainer}
+			</h3>
+		</div>
+	</div>
+</div>
+
+<style>
+	.card-trainer {
+		background-color: white;
+		position: relative;
+		grid-row: span 4;
+		border: 1.3rem solid white;
+	}
+
+	.card-trainer h2,
+	.card-trainer h3 {
+		text-shadow: 0px 0px 4rem #212121;
+	}
+
+	.card-trainer:nth-child(2) {
+		grid-column: 2 /3;
+		grid-row: 2 / 6;
+		object-fit: cover;
+	}
+
+	.card-trainer:nth-child(3) {
+		border-color: var(--cl-accent);
+	}
+
+	.card-trainer:nth-child(4) {
+		grid-column: 2 /3;
+		grid-row: 6 / 10;
+	}
+</style>

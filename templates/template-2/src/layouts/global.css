@@ -1,0 +1,36 @@
+:root {
+  --cl-accent: #fe8235;
+  --cl-primary: #f5f5f5;
+  --cl-secondary: #131313;
+  --cl-tertiary: #222222;
+}
+
+@layer {
+  .global-spacing {
+    @apply mx-auto py-8 px-12 w-10/12;
+  }
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("/fonts/Mona-Sans.ttf");
+}
+
+@font-face {
+  font-family: "San Jose";
+  src: url("/fonts/San-Jose.ttf.woff");
+}
+
+.mona-sans {
+  font-family: "Mona Sans";
+}
+
+.san-jose {
+  font-family: "San Jose";
+}
+
+body {
+  background-color: var(--cl-secondary);
+  color: var(--cl-primary);
+  font-family: "Mona Sans";
+}

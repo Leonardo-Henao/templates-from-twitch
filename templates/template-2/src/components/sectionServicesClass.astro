@@ -1,0 +1,100 @@
+---
+import { FaArrowRightLong } from "react-icons/fa6";
+import Asterisk from "./asterisk.astro";
+---
+
+<article class="mt-[10rem]">
+	<h2 class="text-7xl san-jose text-center">OUR FITNESS CLASS</h2>
+	<ul
+		class="flex gap-7 san-jose text-4xl tracking-tight *:relative *:text-[#898989] justify-center mt-10"
+	>
+		<li>All</li>
+		<li>SIGNATURE CLASS</li>
+		<li class="selected">STRENGTH AND CONDITIONING</li>
+		<li>MIND AND BODY</li>
+		<li>CYCLING</li>
+		<li>CARDIO</li>
+	</ul>
+	<div class="mt-12 gap-12 global-spacing grid-services-class">
+		<div class="flex justify-start relative">
+			<button
+				class="rounded-[3rem] absolute -bottom-[9.7rem] origin-top-left -rotate-90 h-[150px] w-[500px] flex items-center justify-between p-6 text-5xl san-jose bg-tertiary"
+				>BODYCOMBAT <span class="text-3xl"><FaArrowRightLong /></span></button
+			>
+		</div>
+		<img
+			class="border-8 border-light rounded-[2rem] w-full"
+			src="/images/services-class.webp"
+			alt="Imagen de clases"
+		/>
+		<div class="px-4 flex flex-col justify-center">
+			<h4 class="san-jose text-6xl">BODYPUMP</h4>
+			<p class="font-bold mt-4 w-5/6">
+				This Barbell Exercise Targets All Of Your Major Muscles. Based On ‘The
+				Rep Effect, This Proven Formula Will Train Your Muscles Using Light To
+				Moderate Weights For High Rep Exercises, Which Is The Secret To
+				Developing Athletic Muscles.
+			</p>
+			<div
+				class="flex mt-8 gap-6 items-center *:size-20 *:overflow-hidden *:rounded-full *:border-4"
+			>
+				<div class="border-accent">
+					<img
+						class="w-full"
+						src="/images/services-bodypump-1.png"
+						alt="imagenes de bodypump"
+					/>
+				</div>
+				<div>
+					<img
+						class="w-full"
+						src="/images/services-bodypump-2.png"
+						alt="imagenes de bodypump"
+					/>
+				</div>
+				<div>
+					<img
+						class="w-full scale-125"
+						src="/images/services-bodypump-3.png"
+						alt="imagenes de bodypump"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div
+		class="mt-24 flex-wrap text-7xl san-jose global-spacing px-20 section-text-with-images [line-height:1.1] tracking-tight relative text-center"
+	>
+		<Asterisk props="right-[6rem] -top-[6rem] -z-10 text-[16rem]" />
+
+		THE LAST THREE OR FOUR REPS IS <img
+			src="/images/img-to-text-1.png"
+			alt="Image user 1"
+		/> WHAT MAKES THE <img src="/images/img-to-text-2.png" alt="Image user 2" />
+		MUSCLE GROW. THIS AREA OF PAIN DIVIDES A CHAMPION FROM <img
+			src="/images/img-to-text-3.png"
+			alt="Image user 3"
+		/> SOMEONE WHO IS NOT <img
+			src="/images/img-to-text-4.png"
+			alt="Image user 4"
+		/> A CHAMPION."
+	</div>
+</article>
+
+<style>
+	.selected {
+		@apply text-light;
+	}
+	.selected::after {
+		content: "";
+		@apply absolute -bottom-4 left-0 w-full h-1 bg-accent rounded-full;
+	}
+	.grid-services-class {
+		display: grid;
+		grid-template-columns: 150px 2.7fr 1.5fr;
+	}
+
+	.section-text-with-images img {
+		@apply size-[4.5rem] rounded-full inline-block -mt-4 mx-0;
+	}
+</style>

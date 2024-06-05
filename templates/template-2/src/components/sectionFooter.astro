@@ -1,0 +1,28 @@
+---
+import { FaArrowRightLong } from "react-icons/fa6";
+import Asterisk from "./asterisk.astro";
+---
+
+<footer class="mt-28 pb-32 san-jose global-spacing">
+	<div class="flex justify-between border-b-[0.2rem] border-secondary pb-8">
+		<div class="text-8xl relative">
+			GET A FIT LIFESTYLE <br /> EASILY AND FUN HERE.
+			<Asterisk props="text-[14rem] -top-[5rem] -right-[3rem] -z-10" />
+		</div>
+		<button
+			class="text-[3.5rem] bg-tertiary size-32 flex items-center justify-center rounded-full border-accent border-2 border-dashed -rotate-45"
+		>
+			<FaArrowRightLong />
+		</button>
+	</div>
+	<div
+		class="border-b-[0.2rem] border-secondary pb-8 text-7xl tracking-tight mt-10"
+	>
+		<span class="text-secondary">FEEL GREAT.</span> BODY AND MIND.
+	</div>
+	<div class="flex justify-around mt-12 text-4xl tracking-tighter">
+		<span class="mona-sans font-bold">0135 9885 5432</span>
+		<span>RHINOS@GMAIL.FURNITURE</span>
+		<span>LOS ANGLES, CALIFORNIA</span>
+	</div>
+</footer>

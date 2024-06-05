@@ -1,0 +1,68 @@
+---
+import { FaSmile } from "react-icons/fa";
+import Asterisk from "./asterisk.astro";
+---
+
+<main class="bg-light rounded-[4rem] text-dark global-spacing">
+	<h3 class="san-jose text-2xl pb-4 border-b-2 border-dark tracking-tight">
+		MAKE YOUR BODY FIT THIS SPRING WITH US.
+	</h3>
+	<div class="flex justify-around w-full items-end relative">
+		<div class="relative w-fit">
+			<div class="san-jose text-9xl pt-8 tracking-tight">
+				<span class="flex items-center">
+					IMPROVE YOUR
+					<img
+						class="p-3 size-20 border-2 border-accent rounded-3xl border-dashed m-2 -mt-3"
+						src="/icons/flexbicep-svgrepo-com.svg"
+						alt="Icon biceps"
+					/>
+				</span>
+				FITNESS LEVEL FOR <br />THE BETTER
+			</div>
+			<p class="absolute bottom-8 -right-8 w-80 text-lg">
+				More Than 1,800 Fitness Group Classes Per Month, Find New Friends Who
+				Will Motivate Your Fitness Goals
+			</p>
+		</div>
+		<div class="py-8">
+			<Asterisk props="text-[20rem] top-0 right-1" />
+			<button
+				class="flex items-center h-full rounded-full bg-accent px-12 py-4 text-light san-jose text-4xl tracking-widest"
+				>FREE PASS
+			</button>
+		</div>
+	</div>
+	<div class="grid grid-cols-5 gap-4 mt-10">
+		<div class="col-start-1 col-end-3">
+			<figure class="bg-dark w-full p-2 rounded-[2rem]">
+				<img
+					class="w-full rounded-[1.5rem]"
+					src="/images/img-1.png"
+					alt="Imagen promo 1"
+				/>
+				<figcaption
+					class="py-4 text-light san-jose text-center text-2xl tracking-[.2rem]"
+				>
+					REACH YOUR BODY GOALS
+				</figcaption>
+			</figure>
+			<div
+				class="mt-16 flex text-light *:py-4 *:rounded-full san-jose justify-center"
+			>
+				<button class="bg-dark text-5xl px-4"><FaSmile /></button>
+				<button class="bg-accent text-3xl px-10">950K+</button>
+				<button class="bg-dark text-3xl px-8">HAPPY CUSTOMERS</button>
+			</div>
+		</div>
+		<div class="col-start-3 col-end-6">
+			<div class="bg-dark overflow-hidden p-2 rounded-[2rem]">
+				<img
+					class="w-full rounded-[1.5rem]"
+					src="/images/img-2.jpg"
+					alt="Imagen promo 1"
+				/>
+			</div>
+		</div>
+	</div>
+</main>

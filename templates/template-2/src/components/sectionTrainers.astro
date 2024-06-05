@@ -1,0 +1,17 @@
+---
+import { TrainersData } from "../data/TrainersData";
+import CardTrainers from "./cardTrainers.astro";
+---
+
+<article class="list_trainers global-spacing lg:px-40 justify-center">
+	{TrainersData.map((trainers) => <CardTrainers trainer={trainers} />)}
+</article>
+
+<style>
+	.list_trainers {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(50%, 100%));
+		grid-template-rows: repeat(9, 160px);
+		gap: 1rem;
+	}
+</style>

@@ -1,0 +1,36 @@
+---
+import { PlansData } from "../data/PlansData";
+
+const decor_list = "border-b-[0.2rem] border-secondary pb-8"
+---
+
+<article class="bg-light mx-auto global-spacing rounded-[2rem] mt-28">
+	<div class="text-dark text-center">
+		<h2 class="text-6xl san-jose tracking-tighter">CHOOSE YOUR BEST PLAN</h2>
+		<h4 class="text-md mt-4">Choose The Plan That Suits You.</h4>
+	</div>
+	<div class="bg-dark rounded-[2rem] p-14 mt-8 relative">
+		<div class="flex flex-col justify-center items-center  absolute top-[5%] right-[25%] size-52 bg-accent rounded-full border-light border-[.5rem] rotate-12">
+			<div class="size-4 bg-dark rounded-full my-2"></div>
+		  <p class="flex flex-col justify-center text-center font-bold">
+				START FROM
+				<span class="text-6xl my-2">$102</span>
+				/MONTH
+			</p>
+		</div>
+		{ PlansData.map((plan, index) => (<div class={`flex justify-between my-8 items-center ${index != 2 && decor_list }`} >
+					<div>
+				<h2 class={`san-jose text-6xl ${index != 0 && "text-secondary"}`}>
+							{plan.name}
+						</h2>
+						<h4 class={`text-md mt-1 font-bold tracking-wide ${index != 0 && "text-secondary"}`}>
+							{plan.includes.map((x) => `  ·  ${x}`)}
+						</h4>
+					</div>
+					<h4 class={`font-bold ${index != 0 && "text-secondary"}`}>{plan.type}</h4>
+				</div>
+			))
+			}
+	</div>
+</article>
+
