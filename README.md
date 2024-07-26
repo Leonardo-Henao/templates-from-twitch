@@ -20,6 +20,9 @@ This is a collection of websites templates created by Lhenaoll on Twitch live.
 ](https://ko-fi.com/lhenaoll)
 [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)
 ](https://paypal.me/leohenao)
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtube.com/@lhenaoll)
+
+
 
 </div>
 
@@ -36,8 +39,7 @@ This is a collection of websites templates created by Lhenaoll on Twitch live.
 
 ![Image](./screenshots/1.png)
 
-[Here video! <br>
-![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtube.com/@lhenaoll)
+<br>
 
 _Creditos_ [**Behance**](https://www.behance.net/gallery/184359459/E-Learning-Responsive-Website-Landing-Page-Design)
 
@@ -54,12 +56,29 @@ _Creditos_ [**Behance**](https://www.behance.net/gallery/184359459/E-Learning-Re
 
 ![Image](./screenshots/2.png)
 
-[Here video! <br>
-![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtube.com/@lhenaoll)
-
 _Creditos_ [**Dribble**](https://dribbble.com/shots/20540826-Rhinos-Gym-Gym-and-Fitness-Animation)
 
 </div>
+
+### \# <a href="./templates/template-3/">3</a>
+
+<div align="center">
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+![Image](./screenshots/3.png)
+
+[Here video! <br>
+![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/watch?v=aPGL0qtNrTA&list=PLXTYFGtsLmIdjaBNmZfnDNtqg7pKtAoQQ
+)
+
+
+
+_Creditos_ [**Dribble**](https://dribbble.com/shots/19072124-KangCokor-Barber-Shop-Landing-Page)
+
+<!-- Final -->
 
 <div align="center">
 <br>
